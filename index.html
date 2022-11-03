@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./styles.css" />
+	</head>
+	<body>
+		<div class="grocery_list">
+			<div><h1 class="header">My Grocery List</h1></div>
+			<div>
+				<h3 class="sub_header">Add new item</h3>
+				<div>
+					<form class="form">
+						<input
+							id="inputName"
+							class="input_box"
+							type="text"
+							placeholder="item name"
+						/>
+						<input
+							id="inputAmount"
+							class="input_box"
+							type="text"
+							placeholder="Amount"
+						/>
+						<button type="submit" class="form_submit">Add</button>
+					</form>
+				</div>
+			</div>
+			<div>
+				<h3 class="sub_header">List</h3>
+				<div>
+					<ul class="list_display"></ul>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="./index.js"></script>
+</html>
