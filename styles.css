@@ -1,10 +1,19 @@
+::selection {
+	background-color: rgb(109, 0, 100);
+	color: white;
+}
 * {
 	font-family: sans-serif;
+}
+html {
+	height: 100%;
+	background-image: radial-gradient(at top left, #fff 73%, rgb(109, 0, 100) 0);
 }
 
 button {
 	font-size: 1.25rem;
 	width: 5rem;
+	height: 2rem;
 	background-color: white;
 	border: 1px solid rgba(0, 0, 0, 0.4);
 	box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.4);
@@ -17,13 +26,22 @@ button:hover {
 }
 
 .grocery_list {
-	padding: 20px 0 0 50px;
+	padding: 2.5rem 0 0 10rem;
 }
 .header {
 	font-size: 3rem;
 }
 .sub_header {
 	font-size: 1.5rem;
+}
+.form_box {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.form_errors_passage {
+	color: red;
+	font-size: 1.25rem;
 }
 .input_box {
 	font-size: 1.25rem;
