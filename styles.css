@@ -5,8 +5,14 @@
 * {
 	font-family: sans-serif;
 }
+*:focus {
+	box-shadow: 0 1px 5px 1px rgb(127, 91, 255);
+}
 html {
 	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	background-image: radial-gradient(at top left, #fff 73%, rgb(109, 0, 100) 0);
 }
 
@@ -21,7 +27,7 @@ button {
 	transition: all 0.2s ease;
 }
 button:hover {
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgb(109, 0, 100);
 	color: white;
 }
 
@@ -44,16 +50,16 @@ button:hover {
 	font-size: 1.25rem;
 }
 .input_box {
+	border-radius: 3px;
+	line-height: 1.5;
+	border: 1px solid black;
 	font-size: 1.25rem;
 	margin-right: 3rem;
-}
-.input_box:focus {
-	border-color: blue;
+	transition: 0.2s all ease;
 }
 .input_box:last-of-type {
 	width: 10rem;
 }
-
 .list_display {
 	list-style-type: none;
 }
@@ -64,6 +70,7 @@ button:hover {
 	font-size: 1.5rem;
 }
 .list_display_checkbox {
+	accent-color: rgb(109, 0, 100);
 	height: 1.25rem;
 	width: 1.25rem;
 }
@@ -72,11 +79,11 @@ button:hover {
 	color: rgb(170, 170, 170);
 }
 .list_display_items {
-	width: 7.5rem;
+	width: 15rem;
 	margin: 0 2rem 0 2rem;
 }
 .list_display_items:first-of-type {
-	width: 15rem;
+	width: 25rem;
 }
 .list_display_delete {
 }
