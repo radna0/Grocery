@@ -1,0 +1,14 @@
+[
+	{
+		"id": "inputName",
+		"class": "input_box",
+		"type": "text",
+		"placeholder": "item name"
+	},
+	{
+		"id": "inputAmount",
+		"class": "input_box",
+		"type": "text",
+		"placeholder": "Amount"
+	}
+]
