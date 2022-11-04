@@ -91,12 +91,12 @@ button.addEventListener('click', function (event) {
 	}
 	var empty = false;
 	for (var i = 0; i < arrInput.length; i++) {
-		var input = document.querySelector(`#${arrInput[i]}`).value;
+		var input = document.querySelector(`#${arrInput[i]}`).value.trim();
 		if (input === '') {
 			var error = document.createElement('p');
 			error.classList.add('form_errors_passage');
 			error.setAttribute('id', `${arrInput[i]}Errors`);
-			error.innerText = `ERRORS: Input of ${arrInput[i]} is required!`;
+			error.innerText = `ERROR: Input of ${arrInput[i]} is required!`;
 			formErrors.appendChild(error);
 			empty = true;
 		} else {

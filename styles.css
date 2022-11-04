@@ -2,6 +2,29 @@
 	background-color: rgb(109, 0, 100);
 	color: white;
 }
+::-webkit-scrollbar {
+	width: 0.75rem;
+}
+::-webkit-scrollbar-track {
+	background-color: white;
+	margin-block: -1.25rem;
+}
+::-webkit-scrollbar-thumb:horizontal {
+	display: none;
+}
+::-webkit-scrollbar:horizontal {
+	display: none;
+}
+::-webkit-scrollbar-thumb:horizontal {
+	display: none;
+}
+::-webkit-scrollbar-thumb {
+	background-color: rgb(160, 133, 255);
+}
+::-webkit-scrollbar-thumb:hover {
+	background-color: rgb(127, 91, 255);
+}
+
 * {
 	font-family: sans-serif;
 }
@@ -9,7 +32,7 @@
 	box-shadow: 0 1px 5px 1px rgb(127, 91, 255);
 }
 html {
-	height: 100%;
+	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -44,6 +67,9 @@ button:hover {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+}
+.form_errors {
+	height: 5rem;
 }
 .form_errors_passage {
 	color: red;
