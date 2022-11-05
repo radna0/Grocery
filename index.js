@@ -121,7 +121,7 @@ button.addEventListener('click', function (event) {
 
 	for (var i = 0; i < arrInput.length; i++) {
 		var box = document.createElement('p');
-		var input = document.querySelector(`#${arrInput[i]}`).value;
+		var input = document.querySelector(`#${arrInput[i]}`).value.trim();
 		box.innerText = input;
 		box.classList.add('list_display_items');
 
@@ -135,6 +135,8 @@ button.addEventListener('click', function (event) {
 	newItemBox.appendChild(deleteItem);
 	list_display.appendChild(newItemBox);
 	formInput.reset();
+
+	// Store in LocalStorage
 
 	if (!localStorage.getItem('grocery_list')) {
 		localStorage.setItem('grocery_list', JSON.stringify([LocalStorageItems]));
